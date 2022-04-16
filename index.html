@@ -17,27 +17,6 @@
     
 </head>
 <body>
-    <img src="img/icons/menu.png" alt="mobile menu" id="openMobileMenu" class="appMenuIcon d-none">
-    <!-- todo: make this work -->  
-    <div class="menu appMenu d-none">
-        <img src="img/icons/close.png" alt="close menu" id="closeMobileMenu" height="30">
-        <nav>
-            <a href="index.html">Home</a><br>
-            <a href="countries.html">Countries</a><br>
-            <a href="denmark.html" class="subMenu">Denmark</a><br>
-            <a href="faroeislands.html" class="subMenu">Faroe islands</a><br>
-            <a href="finland.html" class="subMenu">Finland</a><br>
-            <a href="greenland.html" class="subMenu">Greenland</a><br>
-            <a href="iceland.html" class="subMenu">Iceland</a><br>
-            <a href="norway.html" class="subMenu">Norway</a><br>
-            <a href="scotland.html" class="subMenu">Scotland</a><br>
-            <a href="sweden.html" class="subMenu">Sweden</a><br>
-            <a href="accomodation.html">Accomodation</a><br>
-            <a href="trips.html">Trips</a><br>
-            <a href="contact.html">Contact</a><br>
-            <a href="about.html">About us</a><br>
-        </nav>
-    </div>
     <div class="bucketlistWrapper closeBucketlist">
         <h3 id="bucketlistTitle">Your bucketlist<i id="arrow" class="fas fa-angle-down d-block d-lg-none"></i></h3>
         <div class="listItem">
@@ -66,7 +45,7 @@
                 <option value="scotland">Scotland</option>
                 <option value="sweden">Sweden</option>
             </select>
-            <button class="btn btn-secondary btn-animated mx-auto">Let's go <i class="fas fa-angle-right"></i></button>
+            <button class="btn btn-secondary btn-animated mx-auto" id="letsgo">Let's go <i class="fas fa-angle-right"></i></button>
             </div>
             <div id="popular">
                 <h2 class="text-center">Most popular places in <span id="selectedCountry">Norway</span></h2>

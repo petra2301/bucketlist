@@ -1,15 +1,12 @@
-
-const pool = require('./db');
 const express = require('express');
-
+const places = require('./routes/places');
 
 const app = express();
 
-app.get('/norwayplaces', (request, response) => {
-    pool.query('SELECT * FROM public.norwayplaces ORDER BY name ASC', (err, res) => {
-        if (err) return console.log(err);
-        response.json(res.rows);
-    });
+app.use('/places', places);
+
+app.use((err, req, res, next) => {
+    res.json(err);
 });
 
 module.exports = app;
